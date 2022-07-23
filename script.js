@@ -1,18 +1,10 @@
 
-/*
-
-<div class="attribution">
-  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-  Coded by <a href="#">Your Name Here</a>.
-</div>
-
-*/
-const clearBtn = document.querySelectorAll('#feature-arrow-up')
-const clearBtnTwo = document.querySelectorAll('#company-arrow-up')
-const dropBtn = document.querySelectorAll('#feature-arrow-down')
-const dropBtnTwo = document.querySelectorAll('#company-arrow-down')
-const featureLinks = document.querySelector('#dropdown-feature')
-const companyLinks = document.querySelector('#dropdown-company')
+const clearBtn = document.getElementById('feature-arrow-up')
+const clearBtnTwo = document.getElementById('company-arrow-up')
+const dropBtn = document.getElementById('feature-arrow-down')
+const dropBtnTwo = document.getElementById('company-arrow-down')
+const featureLinks = document.getElementById('dropdown-feature')
+const companyLinks = document.getElementById('dropdown-company')
 
 
 
@@ -48,12 +40,18 @@ clearBtnTwo.addEventListener('click', function(){
 
 
 //Mobile side
-const menu = document.getElementById('mobile-menu')
-
-function closeBtn(){
-  menu.style.display = 'block'
-  
-}
 
 
 
+
+const modal = document.getElementById('modal')
+const openBtn = document.getElementById('menu')
+const closeBtn = document.getElementById('cancel-btn')
+
+openBtn.addEventListener('click', function(){
+  modal.style.width = '50%'
+})
+
+closeBtn.addEventListener('click', function(){
+  modal.style.width = '0'
+})
