@@ -49,7 +49,6 @@ body{
 }
 
 .feature-img{
-    margin-right: 4px;
     height: 100%;
 }
 
@@ -60,6 +59,7 @@ body{
     padding-left: 5px;
     margin-right: 4px;
     display: none;
+    list-style: none;
    
 }
 
@@ -94,11 +94,13 @@ body{
     width: 50%;
     margin-left: auto;
     margin-right: 5px;
+    
 }
 
 .left-side{
     width: 50%;
-    margin-right: auto;
+    margin-left: auto;
+  
    
 }
 
@@ -132,7 +134,7 @@ body{
     margin-left: 20px;
     padding: 15px;
     border-radius: 10px;
-    background-color: black;
+    background-color: hsl(0, 0%, 8%);
     color: white;
     cursor: pointer;
     margin-bottom: 20%;
@@ -160,82 +162,175 @@ body{
    
 }
 
-#mobile-menu{
+#mobile-nav, #modal{
    display: none;
 }
 
-.menu{
-visibility: hidden;
-list-style: none;
-}
 
+/* MOBILE MENU VIEW*/
 
 
 @media screen and (max-width: 700px) {
-.menu{
+ 
+#nav-links{
+    display: none;
+}
+
+ .right{
+    width: 90%;
+    margin-right: 5px;
+}
+
+.body{
+    display: block;
+}
+
+
+.left-side{
+    width: 100%;
+    margin-right: auto;
+   
+}
+
+#mobile-nav{
+    display: flex;
     visibility: visible;
 }
 
-    #logo-img, #right{
-        padding: 4px;
-    }
+#mobile-links{
+  list-style: none;
+  display: flex;
+}
 
-    .nav-links{
-        display: none;
-    }
-
-
-   
-   #menu-img{
-    width: 18px;
-    height: 18px;
-    padding: 10px;
-   }
-
-
-   #mobile-menu{
-    
-    background-color: grey;
-    position:fixed;
-    top: 0;
-    right: 0;
-   width: 50%;
-    height:100%;
-    display:none;
-    z-index: 1;
-
-   }
-  
-   #nav-links-mobile{
-    display: block;
-    list-style: none;
-   }
-
-   #navs{
-    list-style: none;
-    font-size: 18px;
-   }
-
- #dropdown-feature-mobile, #dropdown-company-mobile{
-    margin-left: 10px;
-    
- }
-
- #feature-arrow-up-mobile, #company-arrow-up-mobile{
-    display: none;
- }
- #feature-arrow-down-mobile, #company-arrow-down-mobile{
+#menu{
+   position: absolute;
+   left: 90%;
    cursor: pointer;
-   
- }
+   visibility: visible;
+}
+
+
+#modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background-color: hsl(0, 0%, 98%);
+    width: 0;
+    visibility: visible;
+    display: block;
+    font-size: 15px;
+    padding: 0;
+    margin: 0;
+    font-weight: 100;
+    font-family: fantasy;
+    overflow-y: scroll;
+    transition: 0.7s;
+}
+
+#dropdown-list-mobile{
+    cursor: pointer;
+}
+
+
+.sub-features{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+
+#features-list{
+    margin-bottom: 7px;
+}
+
+#company-list{
+    margin-bottom: 7px;
+}
+
+.sub-company{
+    margin-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 3px;
+}
+#blog{
+    margin-bottom: 5px;
+}
+
+#about{
+    margin-bottom: 5px;
+}
+
+#careers{
+    margin-bottom: 5px;
+}
+
+li{
+    list-style: none;
+}
+
+#login, #register{
+    text-align: center;
+}
+
+#login{
+    margin-bottom: 8px;
+}
+
+#register{
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    margin-right: 2px;
+}
+
+#cancel-btn{
+    position: absolute;
+    top: 0;
+    left: 25px;
+    width: 20px;
+    height: 10px;
+    cursor: pointer;
+}
+
 
 
 
 }
+
+/*FOR WAYY SMALLER PHONES*/
 
 
 @media screen and (max-width: 300px) {
     #snap{
         width: 70px;
+    }
+
+    #modal{
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background-color: hsl(0, 0%, 98%);
+        width: 0;
+        display: block;
+        visibility: visible;
+        font-size: 8px;
+        padding: 0;
+        margin: 0;
+        font-weight: 500;
+        font-family: fantasy;
+        transition: 0.7s;
+    }
+
+    #cancel-btn{
+        position: absolute;
+        top: 0;
+        left: 25px;
+        width: 15px;
+        height: 18px;
+    }
+
+    #mobile-nav{
+        visibility: visible;
     }
 }
