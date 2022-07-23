@@ -14,6 +14,47 @@
 
 
 
+  <!--MOBILE MENU-->
+
+<nav id="mobile-nav">
+  <ul id="mobile-links">
+    <li id="mobile-logo"><img src="logo.svg" id="snap-img"></li>
+    <li id="menu" onclick="openMenu()"><img src="icon-menu.svg"></li>
+  </ul>
+</nav>
+
+<nav id="modal">
+  <span id="cancel-btn"><img src="icon-close-menu.svg" onclick="closeMenu()"></span>
+  <ul id="dropdown-list-mobile">
+    <ul id="features-list">
+      <li>Features<img src="icon-arrow-down.svg" class="drop-mobile"></li>
+      <li class="sub-features"><img src="icon-todo.svg">Todo</li>
+      <li class="sub-features"><img src="icon-calendar.svg">Calendar</li>
+      <li class="sub-features"><img src="icon-reminders.svg">Reminders</li>
+      <li class="sub-features"><img src="icon-planning.svg">Planning</li>
+    </ul>
+
+    <ul id="company-list">
+      <li>Company<img src="icon-arrow-down.svg" class="drop-mobile"></li>
+      <li class="sub-company">History</li>
+      <li class="sub-company">Our Team</li>
+      <li class="sub-company" id="blog">Blog</li>
+    </ul>
+
+    <ul>
+      <li class="modal-list" id="careers">Careers</li>
+      <li class="modal-list" id="about">About</li>
+    </ul>
+
+    <ul class="sign-in">
+      <li id="login">Login</li>
+      <li id="register">Register</li>
+    </ul>
+    
+  </ul>
+</nav>
+
+
   
 
 <!--DESKTOP MENU-->
@@ -22,24 +63,24 @@
     <ul id="nav">
       <li id="logo-img"><img src="logo.svg" id="snap"></li>
 
-       <div id="feature-links">
-      <li class="nav-links" id="right"class='features'>Features<img src="icon-arrow-down.svg" id="feature-arrow-down"><img src="icon-arrow-up.svg" id="feature-arrow-up"></li>
-      <div id="dropdown-feature">
+       <ul id="feature-links">
+      <li class="nav-links" id="right"class='features'>Features<img src='icon-arrow-down.svg' id="feature-arrow-down"><img src="icon-arrow-up.svg" id="feature-arrow-up"></li>
+      <ul id="dropdown-feature">
       <li class="feature-link"><img src="icon-todo.svg" class="feature-img">Todo List</li>
       <li class="feature-link"><img src="icon-calendar.svg" class="feature-img">Calendars</li>
       <li class="feature-link"><img src="icon-reminders.svg" class="feature-img">Reminders</li>
       <li class="feature-link"><img src="icon-planning.svg" class="feature-img">Planning</li>
-         </div>
-           </div>
+       </ul>
+      </ul>
 
-           <div id="company-links">
+           <ul id="company-links">
       <li class="nav-links" id="right">Company<img src="icon-arrow-down.svg" id="company-arrow-down"><img src="icon-arrow-up.svg" id="company-arrow-up"></li>
-      <div id="dropdown-company">
+      <ul id="dropdown-company">
       <li class="company-link">History</li>
       <li class="company-link">Our Team</li>
       <li class="company-link">Blog</li>
-               </div>
-           </div>
+      </ul>
+              </ul>
           
 
 
@@ -47,12 +88,10 @@
       <li class="nav-links" id="right">Careers</li>
       <li class="nav-links" id="right">About</li>
 
-        <div class="left">
+        <ul class="left">
       <li class="nav-links" id="left">Login</li>
       <li class="nav-links"><button id="register-btn">Register</button></li>
-         </div>
-     <li class="menu"><img src="icon-menu.svg" id="menu-img" onclick="closeBtn()"></li>
-    </ul>
+       
 
     
   </nav>
@@ -60,6 +99,13 @@
 
 
   <div class="body">
+
+
+<div class="right">
+    <img src="image-hero-desktop.png" id="hero-img">
+    </div>
+
+
 
     <div class="left-side">
       <div id="head-text">
@@ -76,66 +122,20 @@
        <div id="sponsors">
         <img src="client-databiz.svg" class="sponsor">
         <img src="client-audiophile.svg" class="sponsor">
-        <img src="client-meet.svg" class="sponsor">
+        <img src='client-meet.svg' class="sponsor">
         <img src="client-maker.svg" class="sponsor">
         
        </div>
     </div>
 
     
-
-
-    <div class="right">
-    <img src="image-hero-desktop.png" id="hero-img">
-    </div>
-
    
 
   </div>
 
-
-
-  <!--MOBILE MENU-->
-
-  <div id="mobile-menu">
-    <nav id="nav-links-mobile">
-        <ul id="navs">
-         
-
-      <div id="feature-links">
-     <li class="nav-link" id="right"class='features'>Features<img src="/images/icon-arrow-down.svg" id="feature-arrow-down-mobile"><img src="/images/icon-arrow-up.svg" id="feature-arrow-up-mobile"></li>
-     <div id="dropdown-feature-mobile">
-     <li class="feature-link"><img src="/images/icon-todo.svg" class="feature-img">Todo List</li>
-     <li class="feature-link"><img src="/images/icon-calendar.svg" class="feature-img">Calendars</li>
-     <li class="feature-link"><img src="/images/icon-reminders.svg" class="feature-img">Reminders</li>
-     <li class="feature-link"><img src="/images/icon-planning.svg" class="feature-img">Planning</li>
-        </div>
-          </div>
-
-          <div id="company-links">
-     <li class="nav-link" id="right">Company<img src="/images/icon-arrow-down.svg" id="company-arrow-down-mobile"><img src="/images/icon-arrow-up.svg" id="company-arrow-up-mobile"></li>
-     <div id="dropdown-company-mobile">
-     <li class="company-link">History</li>
-     <li class="company-link">Our Team</li>
-     <li class="company-link">Blog</li>
-              </div>
-          </div>
-         
-
-
-
-     <li class="nav-link" id="right">Careers</li>
-       <div class="left">
-     <li class="nav-link" id="left">Login</li><br>
-     
-        </div>
-    
-   </ul>
-
-   
- </nav>
-
 </div>
+
+
 
   
   
